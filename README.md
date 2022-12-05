@@ -20,6 +20,7 @@ Website Link: https://webcommentsapp.ccbp.tech/
 
 The app has the following functionalities
 
+- Users can switch between light and dark modes by clicking on the message icon.
 - Initially, the list of comments should be zero and the inputs fields should be empty
 - When non-empty values are provided and **Add Comment** button is clicked,
   - A new comment should be added to the list of comments
