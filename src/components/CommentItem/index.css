@@ -1,0 +1,166 @@
+.amber {
+  background-color: #f59e0b;
+}
+
+.blue {
+  background-color: #0b69ff;
+}
+
+.orange {
+  background-color: #f97316;
+}
+
+.emerald {
+  background-color: #10b981;
+}
+
+.teal {
+  background-color: #14b8a6;
+}
+
+.red {
+  background-color: #b91c1c;
+}
+
+.light-blue {
+  background-color: #0ea5e9;
+}
+
+.user-comment-container {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-family: 'Roboto';
+  margin-bottom: 10px;
+}
+
+.user-comment-body {
+  display: flex;
+}
+
+.user-icon {
+  width: 35px;
+  height: 35px;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  margin-top: 0px;
+  flex-shrink: 0;
+  font-size: 15px;
+}
+
+.user-comment-time {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  color: #334155;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.commented-time {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-left: 23px;
+}
+
+.comment {
+  color: #000000;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+.like-delete-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-section {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.like-button {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.like-icon {
+  width: 22px;
+}
+
+.like-text {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 2px;
+  padding: 0px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.unliked-text {
+  color: #64748b;
+}
+
+.liked-text {
+  color: #0ea5e9;
+}
+
+.delete-comment-button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.delete-icon {
+  width: 22px;
+}
+
+.comment-separator {
+  border: 0.5px solid transparent;
+  background-color: #cbd2d9;
+  width: 100%;
+}
+
+.dark-comments-card {
+  background-image: linear-gradient(
+    135deg,
+    rgb(238, 235, 212),
+    rgb(235, 207, 205),
+    rgb(231, 204, 197)
+  );
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 577px) {
+  .dark-comments-card {
+    padding: 20px;
+  }
+
+  .like-section {
+    margin-left: 10px;
+  }
+}
+
+.dark-separator {
+  background-color: transparent;
+  height: 0px;
+  margin: 0px;
+  border: 0.5px solid transparent;
+}

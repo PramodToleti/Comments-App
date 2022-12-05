@@ -1,0 +1,280 @@
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Roboto';
+  min-height: 100vh;
+}
+
+.bg-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.comments-card {
+  min-width: 300px;
+  flex-shrink: 1;
+}
+
+@media screen and (min-width: 577px) {
+  .comments-card {
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .comments-card {
+    min-width: 1200px;
+  }
+
+  .bg-container {
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+}
+
+.comments-title {
+  color: #1e293b;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: start;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 577px) {
+  .comments-title {
+    font-size: 60px;
+  }
+
+  .about-description {
+    font-size: 20px;
+  }
+}
+
+.comments-image {
+  width: 300px;
+  text-align: center;
+  flex-shrink: 1;
+  margin-bottom: 10px;
+  animation: smallImage 1s forwards;
+  position: relative;
+}
+
+@keyframes smallImage {
+  0% {
+    left: -150vmin;
+  }
+  100% {
+    left: 0vmin;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 577px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .comments-image {
+    order: 1;
+    width: 320px;
+    animation: image 1s forwards;
+    position: relative;
+    margin-left: 20px;
+  }
+}
+
+@keyframes image {
+  0% {
+    right: -80vmin;
+  }
+  100% {
+    right: 0vmin;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .input-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .input-container {
+    width: 650px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .comments-image {
+    width: 400px;
+  }
+}
+
+.about-description {
+  color: #475569;
+  font-weight: 500;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.input-styles {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #cbd2d9;
+  border-radius: 5px;
+  outline: none;
+}
+
+.name-input {
+  height: 45px;
+  padding: 10px;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.comment-input {
+  padding-left: 10px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.add-button {
+  border: 0;
+  height: 38px;
+  width: 125px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #0284c7, #689eb9);
+  color: #ffffff;
+  font-family: 'Roboto';
+  cursor: pointer;
+  outline: none;
+}
+
+.separator {
+  border: 0.5px solid transparent;
+  background-color: #cbd2d9;
+}
+
+.comments-count-container {
+  display: flex;
+  margin-left: 5px;
+  animation: commentsCount 1s forwards;
+  position: relative;
+}
+
+@keyframes commentsCount {
+  0% {
+    top: -2vmin;
+  }
+  100% {
+    top: 0vmin;
+  }
+}
+
+.comments-count {
+  background-color: #0284c7;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.comments-count-title {
+  color: #475569;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.users-comments-card {
+  width: 300px;
+  list-style-type: none;
+  padding: 0px;
+  min-height: 100px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 577px) {
+  .users-comments-card {
+    width: 100%;
+    height: 160px;
+    max-height: 300px;
+  }
+}
+
+.users-comments-card::-webkit-scrollbar {
+  width: 0;
+}
+
+.dark-light-container {
+  text-align: end;
+}
+
+.theme-icon {
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
+  position: relative;
+  left: 5vmin;
+  top: 3vmin;
+  cursor: pointer;
+  animation: lightIcon 1s forwards 1s;
+  position: relative;
+}
+
+.light-icon {
+  width: 48.5px;
+}
+
+@keyframes lightIcon {
+  50% {
+    transform: rotate(40deg);
+  }
+}
+
+.dark-bg-color {
+  background-color: #292828;
+}
+
+.dark-mode-text {
+  color: #ffffff;
+}
+
+.dark-button-styles {
+  background-image: linear-gradient(
+    135deg,
+    rgb(147, 90, 212),
+    rgb(165, 123, 190)
+  );
+}
+
+/* .container {
+  background-image: url('https://i.pinimg.com/originals/35/af/af/35afafe68e784115c61f34f77c8eaabb.jpg');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+} 
+ 
+.empty-comments-container {
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+ */
